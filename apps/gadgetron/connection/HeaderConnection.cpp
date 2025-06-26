@@ -57,7 +57,7 @@ namespace {
                     if (it->name == "tSequenceVariant") {
                         GDEBUG("Hash bstar found %s found\n", it->value.c_str());
                         std::string hash_bstar=it->value.c_str();
-                        std::string bstar_folder_traj="/opt/config_nnUNet/bstar_trajectories_PD/";
+                        std::string bstar_folder_traj="/opt/data/bstar_traj/";
                         // Loop through all .seq files in bstar_folder_traj
                         for (const auto& entry : std::filesystem::directory_iterator(bstar_folder_traj)) {
                             
